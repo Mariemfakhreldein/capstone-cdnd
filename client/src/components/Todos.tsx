@@ -66,7 +66,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
         newTodoName: ''
       })
     } catch {
-      alert('Todo creation failed, make sure you provide a todo name')
+      alert('Todo creation failed, make sure you provide a note text')
     }
   }
 
@@ -77,7 +77,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
         todos: this.state.todos.filter((todo) => todo.todoId != todoId)
       })
     } catch {
-      alert('Todo deletion failed')
+      alert('note deletion failed')
     }
   }
 
@@ -95,7 +95,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
         })
       })
     } catch {
-      alert('Todo update failed')
+      alert('note update failed')
     }
   }
 
@@ -145,7 +145,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
   render() {
     return (
       <div>
-        <Header as="h1">TODOs List</Header>
+        <Header as="h1">NOTEs List</Header>
 
         {this.renderCreateTodoInput()}
 
@@ -163,12 +163,12 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
               color: 'teal',
               labelPosition: 'left',
               icon: 'add',
-              content: 'New task',
+              content: 'New note',
               onClick: this.onTodoCreate
             }}
             fluid
             actionPosition="left"
-            placeholder="What do you want done?"
+            placeholder="What do you want noted?"
             onChange={this.handleNameChange}
           />
         </Grid.Column>

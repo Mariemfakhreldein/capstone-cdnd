@@ -41,6 +41,7 @@ export default class App extends Component<AppProps, AppState> {
             <Grid.Row>
               <Grid.Column width={16}>
                 <Router history={this.props.history}>
+                  <h1> NOTEs APP </h1>
                   {this.generateMenu()}
 
                   {this.generateCurrentPage()}
@@ -55,7 +56,7 @@ export default class App extends Component<AppProps, AppState> {
 
   generateMenu() {
     return (
-      <Menu>
+      <Menu>       
         <Menu.Item name="home">
           <Link to="/">Home</Link>
         </Menu.Item>
