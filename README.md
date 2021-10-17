@@ -4,22 +4,9 @@ a notepad application where user can add notes and attach images to them
 
 # Functionality of the application
 
-This application will allow creating/removing/updating/fetching NOTE. 
-Each NOTE can optionally have an attachment image. 
-Each user only has access to NOTES that they has created.
-
-# NOTE items
-
-The application should store NOTE items, and each NOTE item contains the following fields:
-
-* `todoId` (string) - a unique id for an item
-* `createdAt` (string) - date and time when an item was created
-* `name` (string) - content of the note
-* `dueDate` (string) - date and time by which an item should be completed
-* `done` (boolean) - true if an item was completed, false otherwise
-* `attachmentUrl` (string) (optional) - a URL pointing to an image attached to a NOTE item
-
-You might also store an id of a user who created a NOTE item.
+* This application will allow creating/removing/updating/fetching NOTE. 
+* Each NOTE can optionally have an attachment image. 
+* Each user only has access to NOTES that they has created.
 
 # the applicatiion has two parts a frontend and a backend 
 
